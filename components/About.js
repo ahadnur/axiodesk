@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function About() {
   return (
-    <div className="py-32 px-5 lg:px-16 2xl:px-80" id="about">
+    <div className="pt-32 px-5 lg:px-16 2xl:px-80" id="about">
       <span className="text-[#ee3e38] text-2xl font-bold">Hi there!</span>
       <div className="flex justify-between items-start flex-col md:flex-row mt-5 gap-5 md:gap-0">
         <div>
