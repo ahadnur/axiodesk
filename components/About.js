@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 function About() {
+  
   return (
-    <div className="pt-32 px-5 lg:px-16 2xl:px-80" id="about">
+    <div className="pt-32 pb-10 px-5 lg:px-16 2xl:px-80" id="about">
       <span className="text-[#ee3e38] text-2xl font-bold">Hi there!</span>
       <div className="flex justify-between items-start flex-col md:flex-row mt-5 gap-5 md:gap-0">
         <div>
@@ -24,7 +25,7 @@ function About() {
           <div className="mt-8">
             <Link
               href="#"
-              className="border border-[#891f5d] py-2 px-6 mt-5 text-[#891f5d] uppercase tracking-widest text-sm font-semibold hover:bg-[#891f5d] hover:text-white transition-all duration-300">
+              className="border border-[#ee3e38] py-2 px-6 mt-5 text-[#ee3e38] uppercase tracking-widest text-sm font-semibold hover:bg-[#ee3e38] hover:text-white transition-all duration-300">
               Read More <span className="ml-3">&#8594;</span>
             </Link>
           </div>
