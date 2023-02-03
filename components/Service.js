@@ -3,42 +3,52 @@ import React from "react";
 function Service() {
   const data = [
     {
+      id: 1,
       title: "SEO",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 2,
       title: "SMM",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 3,
       title: "LinkedIn Outreach",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 4,
       title: "Facebook Campaign",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 5,
       title: "Customer/Product Support",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 6,
       title: "Digital Marketing Website",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 7,
       title: "Marketing Blue Print and consultancy",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 8,
       title: "Virtual marketing assistance",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 9,
       title: "Affliate Ad marketing",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
     {
+      id: 10,
       title: "Graphics Design",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaequidem error deleniti?",
     },
@@ -57,7 +67,7 @@ function Service() {
       {/* Main content */}
       <div className="bg-[#1f2937] text-gray-50 py-5 px-5 lg:px-16 2xl:px-80">
         <div className="flex flex-col md:flex-row justify-between items-start">
-          <span className="text-2xl font-extrabold text-[#ee3e38]">
+          <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
             What we do
           </span>
           <div className="w-full md:w-3/4">
@@ -71,7 +81,9 @@ function Service() {
             </p>
             <div className="services w-full mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2lx:grid-cols-4 gap-5 ">
               {data.map((d) => (
-                <div className="w-full border border-gray-400/20 border-dashed rounded-sm p-6 ">
+                <div
+                  className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
+                  key={d.id}>
                   <h3 className="font-bold mb-3 text-orange-600 text-lg uppercase">
                     {d.title}
                   </h3>
