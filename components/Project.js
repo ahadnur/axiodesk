@@ -67,9 +67,11 @@ function Project() {
           </div>
         ))}
       </div>
-      <div>
-        <Link href={`/`}>
-            View All Works
+      <div className="mt-10">
+        <Link
+          href={`/`}
+          className="text-xl md:text-2xl font-semibold text-[#ee3e38]">
+          View All Works <span className="ml-3">&#8594;</span>
         </Link>
       </div>
     </div>
