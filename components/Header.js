@@ -1,58 +1,13 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 
-import { AiOutlineBars } from 'react-icons/ai'
-
-
-const Header = () => {
-  const [open, setOpen] = useState(false)
-  const toggle= () =>{
-    return setOpen(!open)
-  }
+function Header({ title }) {
   return (
-    <nav className="h-16 px-5 lg:px-16 2xl:px-80 flex justify-between items-center">
-      <div className="logo cursor-pointer flex justify-center items-center gap-2">
-        <img src="/img/logo.png" alt="Logo" className="w-7" />
-        <img src="/img/logo_text.png" alt="Logo" className="hidden md:block w-32" />
-      </div>
-      <div className={open ? `links lg:hidden` : `hidden lg:block`}>
-        <ul
-          className={
-            open
-              ? `absolute top-16 left-1/2 -translate-x-1/2 flex justify-center items-center py-8 gap-5 flex-col bg-white w-[90%] rounded-sm shadow-xl`
-              : `relative flex gap-8`
-          }>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="#about">About</Link>
-          </li>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Services</Link>
-          </li>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Projects</Link>
-          </li>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Testimony</Link>
-          </li>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Blog</Link>
-          </li>
-          <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Contact</Link>
-          </li>
-        </ul>
-      </div>
-      <div
-        className="ham cursor-pointer flex justify-center items-center gap-2 text-2xl lg:hidden"
-        onClick={toggle}>
-        <AiOutlineBars className="text-lg" />
-        <span className="text-sm md:text-lg">MENU</span>
-      </div>
-    </nav>
+    <div className="bg-[url(/img/bg.svg)] w-full h-60 bg-right-bottom bg-[100vw_auto] bg-no-repeat md:bg-right-top md:h-80 md:bg-[80vw_auto] flex justify-start items-center px-5 lg:px-16 2xl:px-80">
+      <h1 className="text-2xl sm:text-3xl lg:text-6xl 2xl:text-7xl font-extrabold text-gray-800">
+        {title}
+      </h1>
+    </div>
   );
-};
+}
 
-export default Header
+export default Header;
