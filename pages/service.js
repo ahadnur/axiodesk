@@ -101,7 +101,7 @@ function service() {
                     <div
                       className="w-full border border-gray-400/20 border-dashed rounded-sm p-6"
                       key={d.id}>
-                      <h3 className="font-bold mb-3 text-[#ee3e38] text-lg uppercase">
+                      <h3 className="font-bold mb-3 text-orange-500 text-lg uppercase">
                         {d.title}
                       </h3>
                       <p className="text-gray-400 font-light">{d.desc}</p>
@@ -115,7 +115,7 @@ function service() {
           {/* Steps Block */}
           <div className="steps py-20 px-5 lg:px-16 2xl:px-80">
             <div className="w-full md:w-3/4">
-              <span className="text-[#ee3e38] text-md 2xl:text-2xl font-semibold uppercase">
+              <span className="text-orange-500 text-md 2xl:text-2xl font-semibold uppercase">
                 Our Process
               </span>
               <h1 className="text-2xl md:text-6xl text-gray-800 font-black w-full md:w-2/3 mt-4">

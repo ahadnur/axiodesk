@@ -26,13 +26,13 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="#about">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li className="hover:text-[#ee3e38] transition-all duration-300">
             <Link href="/service">Services</Link>
           </li>
           <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Projects</Link>
+            <Link href="/project">Projects</Link>
           </li>
           <li className="hover:text-[#ee3e38] transition-all duration-300">
             <Link href="/">Testimony</Link>
