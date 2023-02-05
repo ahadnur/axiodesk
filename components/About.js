@@ -12,21 +12,33 @@ function About() {
   const teamData = [
     {
       id: 1,
-      memberName: "John Doe",
+      memberName: "Abu Bakkar Hawladar",
       designation: "CEO",
-      image: "/img/profilePicture/profile.jpg",
+      image: "/img/profilePicture/abubakkar.png",
     },
     {
       id: 2,
-      memberName: "John Doe",
+      memberName: "Bidhan",
       designation: "CEO",
-      image: "/img/profilePicture/profile.jpg",
+      image: "/img/profilePicture/Bidhan.jpeg",
     },
     {
       id: 3,
-      memberName: "John Doe",
+      memberName: "Omur",
       designation: "CEO",
-      image: "/img/profilePicture/profile.jpg",
+      image: "/img/profilePicture/Omur.jpg",
+    },
+    {
+      id: 4,
+      memberName: "Roaida",
+      designation: "CEO",
+      image: "/img/profilePicture/Roaida.jpeg",
+    },
+    {
+      id: 5,
+      memberName: "Saberul",
+      designation: "CEO",
+      image: "/img/profilePicture/Saberul.jpeg",
     },
   ];
 
@@ -78,7 +90,7 @@ function About() {
             </p>
           </div>
 
-          <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-5">
+          <div className="w-full mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-8">
             {teamData.map((td) => (
               <div className="member" key={td.id}>
                 <img
