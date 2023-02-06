@@ -17,22 +17,22 @@ function Footer() {
             <div className="social flex justify-center items-center gap-5">
               <div>
                 <Link href={``}>
-                  <AiFillFacebook className="text-2xl md:text-3xl hover:text-[#ee3e38] transition duration-300" />
+                  <AiFillFacebook className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
               </div>
               <div>
                 <Link href={``}>
-                  <AiFillTwitterSquare className="text-2xl md:text-3xl hover:text-[#ee3e38] transition duration-300" />
+                  <AiFillTwitterSquare className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
               </div>
               <div>
                 <Link href={``}>
-                  <AiFillInstagram className="text-2xl md:text-3xl hover:text-[#ee3e38] transition duration-300" />
+                  <AiFillInstagram className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
               </div>
               <div>
                 <Link href={``}>
-                  <AiFillLinkedin className="text-2xl md:text-3xl hover:text-[#ee3e38] transition duration-300" />
+                  <AiFillLinkedin className="text-2xl md:text-3xl hover:text-orange-500 transition duration-300" />
                 </Link>
               </div>
             </div>

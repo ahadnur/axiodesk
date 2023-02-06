@@ -41,7 +41,7 @@ const Nav = () => {
             <Link href="/">Blog</Link>
           </li>
           <li className="hover:text-[#ee3e38] transition-all duration-300">
-            <Link href="/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
